@@ -1,26 +1,32 @@
-public class Fila {
+public class Fila 
+{
  
 
     private static Fila instancia;
  
 
-    private Fila() {
+    private Fila() 
+    {
 
     }
  
 
-    public static Fila getInstancia() {
-        if (instancia == null) {
+    public static Fila getInstancia() 
+    {
+        if (instancia == null) 
+        {
             instancia = new Fila();
         }
         return instancia;
     }
  
-    public void adicionarDocumento(String documento) {
+    public void adicionarDocumento(String documento) 
+    {
         System.out.println("Documento " + documento + " adicionado à fila.");
     }
  
-    public void removerDocumento() {
+    public void removerDocumento() 
+    {
         System.out.println("Documento removido da fila.");
     }
 }
